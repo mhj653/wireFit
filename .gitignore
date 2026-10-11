@@ -1,0 +1,56 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# ===== 가상환경 =====
+FastenAutomationVenv/
+.venv/
+venv/
+env/
+
+# ===== exe 빌드 결과 (build_exe_*.spec) =====
+/build/
+/dist/
+
+# ===== 사용자 데이터 =====
+# 프로그램이 처음 저장할 때 스스로 만드는 폴더들이다(app_paths.user_data_dir).
+# PC·현장마다 내용이 달라 저장소에 두지 않는다.
+/Settings/
+/Calibration/
+/Templates/
+/Preset/
+/Logs/
+/WireDebug/
+/SampleData/
+/TempDebug/
+/Release/
+
+# 테스트 촬영 폴더 (가상 카메라용, 날짜 이름: 260901 등)
+/[0-9][0-9][0-9][0-9][0-9][0-9]/
+
+# ===== SAM2 체크포인트 (~1.5GB, README 의 다운로드 절차로 받는다) =====
+/models/
+*.pt
+*.pth
+
+# ===== 로그 =====
+*.log
+
+# ===== 쓰지 않는 파일 (이전 프로그램에서 넘어온 것) =====
+/origin*.png
+/mm_module.src
+/mm_module.dat
+/realSenseSetting.json
+/monocular_matching.py
+/pages/sample_module_page.py
+
+# ===== 에디터 / OS =====
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,22 @@
+# Fastening Automation 의존성
+# 검증 환경: Windows 11, Python 3.13
+#
+# 코드가 직접 쓰는 패키지만 적는다. 하위 의존성(hydra-core, iopath, tqdm,
+# pillow 등)은 pip 가 함께 설치한다.
+
+# torch 는 CUDA 12.8 빌드(cu128)를 쓴다. RTX 4050(sm_89)과 RTX 5060(sm_120)을
+# 둘 다 지원하는 조합이다. Windows 에서 PyPI 의 기본 torch 는 CPU 빌드라
+# PyTorch 인덱스를 따로 지정한다.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# ===== 실행 =====
+PyQt5==5.15.11
+numpy==2.5.1
+opencv-python==5.0.0.93
+pyrealsense2==2.58.3.10794
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+sam2==1.1.0
+
+# ===== exe 빌드 (build_exe_*.spec) =====
+pyinstaller==6.22.0
